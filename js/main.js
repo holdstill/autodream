@@ -1,3 +1,4 @@
+/* Main animation*/
 let		aboutRight = document.querySelector('#a1'),
 		aboutLeft = document.querySelector('#a2'),
 
@@ -19,11 +20,8 @@ let		aboutRight = document.querySelector('#a1'),
 		auctionRight = document.querySelector('#au1'),
 		auctionLeft = document.querySelector('#au2'),
 
-		sUp1 = document.querySelector('#s1')/*,
-		sUp2 = document.querySelector('#s2'),
-		sUp3 = document.querySelector('#s3'),
-		sUp4 = document.querySelector('#s4'),
-		sUp5 = document.querySelector('#s5')*/;
+		sUp1 = document.querySelector('#s1');
+
 function hideElements() {
 	if (window.innerWidth > 768) {
         	aboutRight.classList.add('vis');
@@ -41,10 +39,6 @@ function hideElements() {
 			auctionRight.classList.add('vis');
 			auctionLeft.classList.add('vis');
 			sUp1.classList.add('vis');
-/*			sUp2.classList.add('vis');
-			sUp3.classList.add('vis');
-			sUp4.classList.add('vis');
-			sUp5.classList.add('vis');*/
 	}
 }
 
@@ -63,49 +57,47 @@ hideElements();
     
 function scrollFunctions() {
 let	pageY = window.pageYOffset + 500;
-    if (window.innerWidth > 768) {
-    
+    if (window.innerWidth > 768) { 
 
+	    if (window.pageYOffset+aboutRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+aboutLeft.getBoundingClientRect().bottom > pageY) {
+			aboutRight.classList.add('slideInRight');
+			aboutLeft.classList.add('slideInLeft'); 
+	    }
 
-    if (window.pageYOffset+aboutRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+aboutLeft.getBoundingClientRect().bottom > pageY) {
-    	aboutRight.classList.add('slideInRight');
-    	aboutLeft.classList.add('slideInLeft'); 
-    }
+		else if (window.pageYOffset+benefitsRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+benefitsLeft.getBoundingClientRect().bottom > pageY  ) {
+			benefitsRight.classList.add('slideInLeft');
+			benefitsLeft.classList.add('slideInRight');
+		}
 
-	else if (window.pageYOffset+benefitsRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+benefitsLeft.getBoundingClientRect().bottom > pageY  ) {
-		benefitsRight.classList.add('slideInLeft');
-		benefitsLeft.classList.add('slideInRight');
+		else if (window.pageYOffset+serviceRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+serviceLeft.getBoundingClientRect().bottom > pageY  ) {
+			serviceRight.classList.add('slideInLeft');
+			serviceLeft.classList.add('slideInRight');
+		}
+
+		else if (window.pageYOffset+electroRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+electroLeft.getBoundingClientRect().bottom > pageY  ) {
+			electroRight.classList.add('slideInLeft');
+			electroLeft.classList.add('slideInRight');
+		}
+
+		else if (window.pageYOffset+faqRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+faqLeft.getBoundingClientRect().bottom > pageY  ) {
+			faqRight.classList.add('slideInLeft');
+			faqLeft.classList.add('slideInRight');
+		}
+
+		else if (window.pageYOffset+carsRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+carsLeft.getBoundingClientRect().bottom > pageY  ) {
+			carsRight.classList.add('slideInLeft');
+			carsLeft.classList.add('slideInRight');
+		}
+
+		else if (window.pageYOffset+auctionRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+auctionLeft.getBoundingClientRect().bottom > pageY  ) {
+			auctionRight.classList.add('slideInLeft');
+			auctionLeft.classList.add('slideInRight');
+		}
+
+		else if (window.pageYOffset+sUp1.getBoundingClientRect().bottom > pageY || window.pageYOffset+sUp1.getBoundingClientRect().bottom > pageY  ) {
+			sUp1.classList.add('fadeInUp');
+		}
 	}
-
-	else if (window.pageYOffset+serviceRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+serviceLeft.getBoundingClientRect().bottom > pageY  ) {
-		serviceRight.classList.add('slideInLeft');
-		serviceLeft.classList.add('slideInRight');
-	}
-
-	else if (window.pageYOffset+electroRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+electroLeft.getBoundingClientRect().bottom > pageY  ) {
-		electroRight.classList.add('slideInLeft');
-		electroLeft.classList.add('slideInRight');
-	}
-
-	else if (window.pageYOffset+faqRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+faqLeft.getBoundingClientRect().bottom > pageY  ) {
-		faqRight.classList.add('slideInLeft');
-		faqLeft.classList.add('slideInRight');
-	}
-
-	else if (window.pageYOffset+carsRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+carsLeft.getBoundingClientRect().bottom > pageY  ) {
-		carsRight.classList.add('slideInLeft');
-		carsLeft.classList.add('slideInRight');
-	}
-
-	else if (window.pageYOffset+auctionRight.getBoundingClientRect().bottom > pageY || window.pageYOffset+auctionLeft.getBoundingClientRect().bottom > pageY  ) {
-		auctionRight.classList.add('slideInLeft');
-		auctionLeft.classList.add('slideInRight');
-	}
-
-	else if (window.pageYOffset+sUp1.getBoundingClientRect().bottom > pageY || window.pageYOffset+sUp1.getBoundingClientRect().bottom > pageY  ) {
-		sUp1.classList.add('fadeInUp');
-	}
-}
 }
 
 window.addEventListener('scroll', function () {
@@ -113,7 +105,7 @@ window.addEventListener('scroll', function () {
 });
 
 scrollFunctions();
-
+/* Menu animation*/
 function scrollNav() {
     if (window.pageYOffset > 200 ) {
     	headerColor.classList.add('hc');
@@ -152,6 +144,7 @@ window.addEventListener('scroll', function () {
 });
 scrollNav();
 
+/* Menu button*/
  var nav = document.querySelector('.logo');
 	function show() {
 			document.querySelector("nav").classList.toggle('mo_min');
@@ -161,21 +154,19 @@ scrollNav();
 			logoMin.classList.toggle('dn');
 			logoText.classList.toggle('dn');
 			logoStars.classList.toggle('dn');
-
 	}
+
 	function act() {document.querySelector(".toggle-btn").classList.toggle('active');}
 
-
+/* Scrolldown/scrollup menu */
 let lastScrollTop = 0;
 let main = document.querySelector('main');
 let menuPadMin = document.querySelector('.menu')
-// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-   var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
 
-console.log(window.pageYOffset);
-console.log(main.offsetTop);
-	if (/*st > lastScrollTop && */window.pageYOffset >= main.offsetTop - 200){
+window.addEventListener("scroll", function(){ 
+   var st = window.pageYOffset || document.documentElement.scrollTop; 
+
+	if (window.pageYOffset >= main.offsetTop - 200){
       // downscroll code
 		logoMin.classList.add('slideOutLeft');
 		logoMin.classList.remove('slideInLeft');
@@ -188,13 +179,8 @@ console.log(main.offsetTop);
 		buttonElementSecond.classList.add('be_min');
 		buttonElementThird.classList.add('be_min');
 		menuPadMin.classList.add('m_li_min');
-
-
-		// navScrollMin.classList.add('');
-
-      console.log('gotcha!');
 	} 
-	if (st < lastScrollTop /*&& window.pageYOffset >= main.offsetTop - 45*/) {
+	if (st < lastScrollTop ) {
       // upscroll code
 		logoMin.classList.remove('slideOutLeft');
 		logoMin.classList.add('slideInLeft');
@@ -207,18 +193,11 @@ console.log(main.offsetTop);
 		buttonElementFirst.classList.remove('be_min');
 		buttonElementFirst.classList.remove('mt8');
 		menuPadMin.classList.remove('m_li_min');
-
-
-
-
-
-      console.log('scroll up');
    }
    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }, false);
 
-
-
+/* Question open */
 var q = document.getElementsByClassName('question_container');
 
 
@@ -226,7 +205,7 @@ var q = document.getElementsByClassName('question_container');
 		q[i].onclick = function() {
 			var a = this.querySelector('.answer');
 			var r = this.querySelector('.arrow');
-			console.log(a);
+			
 			if (a.style.display == 'block') {
 				a.style.display = 'none';
 				r.classList.add('rotateOut');
@@ -240,10 +219,7 @@ var q = document.getElementsByClassName('question_container');
 		}
 	}
 
-
-
-
-
+/* Modal */
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
@@ -271,8 +247,7 @@ window.onclick = function(event) {
     }
 }
 
-
-
+/* Timer section*/
 var a = document.getElementsByClassName('timer_text');
 var b = document.getElementsByClassName('timer');
 
@@ -344,8 +319,7 @@ function Show1Times() {
 }
 
 var now = new Date();
-var dayOfMounth = now.getDate();
-	console.log(dayOfMounth);
+var dayOfMounth = now.getDate();	
 
 if (dayOfMounth == 4 || dayOfMounth == 8 || dayOfMounth == 12 || dayOfMounth == 16 || dayOfMounth == 20 || dayOfMounth == 24 || dayOfMounth == 28 || dayOfMounth == 31) {
 	var myVar = setInterval(ShowTimes, 1000);

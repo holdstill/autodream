@@ -641,6 +641,26 @@ main {
 	padding-top: 90px;
 	margin: 0 50px;
 	text-align: center;
+	color: #2d2e5b;
+	font-weight: 900;
+}
+
+
+.service_icon::after {
+	content: '';
+	width: 20px;
+	height: 30px;
+	background-image: url(../img/arrow.png);
+	background-position: 50% 50%;
+	background-size: cover;
+	position: absolute;
+	transform: translate3d(80px, -90px, 0);
+}
+.service_icon:last-child::after { 
+	content: '';
+	width: 0;
+	height: 0;
+	background-image: none;
 }
 	
 	.service_icon:first-child {background: url(../img/conversation.png)  no-repeat;background-size: contain;}
@@ -661,12 +681,14 @@ main {
 	padding: 15px 15px;
 }
 
+.addition_questions {display: flex; justify-content: center;text-align: center;}
+.addition_questions>div>div {font-size: 24px; color: #2d2e5b; font-weight: 900; margin-bottom: 15px;}
 
 	.hide {height: 0px; padding: 0; transition: height 0.3s}
 	.show {height: auto; transition: height 0.3s}
 .contacts_container a {
 	color: #000;
-	text-decoration: none;
+	text-decoration: none!important;
 }
 .auction_icon {
 	width: 90px;
@@ -1012,6 +1034,8 @@ footer .copyrights {
 .auction_container>.image_section>div:first-child {margin-bottom: 25px;}
 .auction_container>.image_section>div:nth-child(2) {margin-bottom: 15px;}
 .auction_container>.image_section>div:nth-child(4) {margin-bottom: -15px;}
+.service_icon::after {
+	background-image: none;}
 
 }
 
@@ -1078,8 +1102,9 @@ footer .copyrights {
 .image_slider_container {
 	max-width: inherit;
     max-height: 500px;
-
 }
+.service_icon::after {
+	transform: translate3d(55px, -90px, 0);}
 
 }
 
@@ -1132,9 +1157,10 @@ footer .copyrights {
 .image_slider_container {
 	max-width: inherit;
     max-height: 500px;
-
 }
 
+.service_icon::after {
+	transform: translate3d(55px, -90px, 0);}
 }
 
 /* MODAL */
