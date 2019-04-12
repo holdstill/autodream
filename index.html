@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<title>Document</title>
+<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+<link rel="stylesheet" href="font/museosanscyrl.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="header_top">
+			<div class="logo">
+				<div class="logo_stars fade_in"></div>
+				<div class="logo_min"></div>
+				<div class="logo_text"></div>
+				<div class="logo_menu nav_min dn"></div>
+			</div>
+			<nav>
+				<ul class="menu">
+					<li><a href="#about">О компании</a></li>
+					<li><a href="#about">Авто из США</a></li>
+					<li><a href="#electromobile">Электромобили</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="toggle-btn" onclick="show(); act()">
+			<div class="star_menu"></div>
+				<span id="be1"></span>
+				<span id="be2"></span>
+				<span id="be3"></span>
+
+			</div>
+		</div>
+		<div class="header_bottom">
+			<h1><b>Авто Вашей мечты из США</b></h1>
+			<button type="button" class="order_button">заказать консультацию</button>
+			<div class="timer_container">
+				<div class="timer_text"></div>
+				<div class="timer"></div>
+			</div>
+			<a class="learn_button" href="#s1">узнать подробнее</a>
+
+		</div>
+			<div class="header-slider">
+				<div class="slide slide-1 background-cover "></div>
+				<div class="slide slide-2 background-cover "></div>
+				<div class="slide slide-3 background-cover "></div>
+				<div class="slide slide-4 background-cover "></div>
+				<div class="slide slide-5 background-cover "></div>
+				<div class="slide slide-6 background-cover "></div>
+				<div class="slide slide-7 background-cover "></div>
+			</div>
+	</header>
+
+	<main>
+		<section id="about">
+			<div class="secondary_header">
+				<h2>О компании</h2>
+			</div>
+			<div class="about_container">
+				<div class="image_section" id="a1"></div>
+				<div class="content" id="a2">
+					<p><strong>AutoDream</strong> - команда энергичных экспертов, ранее специализировавшихся на ремонте автомобилей. </p>
+					<p>После принятия закона N 1389-19 – “О внесении изменений в подраздел 5 раздела ХХ «Переходные положения Налогового кодекса Украины относительно стимулирования развития рынка транспортных средств с пробегом» в 2016 году мы начали заниматься покупкой автомобилей из США.</p>
+					<p>У нас большой опыт ремонтов автомобилей и мы знаем как купить автомобиль с минимальными рисками скрытых деффектов, что значительно уменьшит сумму ремонта авто и как следствие конечную стоимость автомобиля.</p>
+				</div>
+			</div>
+		</section>
+
+		
+
+		<section id="benefits">
+			<div class="secondary_header">
+				<h2>Почему авто из США</h2>
+			</div>
+			<div class="benefits_container">
+				<div class="image_section" id="b1"></div>
+				<div class="content" id="b2">
+					<p>Автомобили в США обязательно проходят все регламентируемое техническое обслуживание, качество дорог у них так же не вызывает сомнений, чего не скажешь о странах СНГ, поэтому покупая автомобиль с малым пробегом Вы обрекаете себя на покупку авто приближенного к состоянию нового. Так же комплектации практически всех автомобилей у них премиальные, наличие многих опций для американцев - обычное дело.</p>
+					<p>Покупая авто из США, после привоза, растаможивания и ремонта экономия может составлять до 50% от стоимости аналогичного авто в Украине. 
+					Проверим?!</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="service">
+			<div class="secondary_header">
+				<h2>Профессиональный подход</h2>
+			</div>
+			<div class="service_container">
+				<div class="image_section" id="se1"></div>
+				<div class="content" id="se2">
+
+					<p>Команда <strong>AutoDream</strong> поможет Вам в приобретении автомобиля Вашей мечты из США. Тщательная проверка автомобиля 11 способами минимизирует ваши риски от покупки кота в мешке. Часто бывает, что автомобиль попадает на аукцион не первый раз. Местные специалисты покупают сильно битые авто за дёшево, меняют некоторые навесные детали, делая тем самым вид незначительного дтп и продают в 2-3 раза дороже. Такие авто покупать опасно, так как внутренние повреждения могут быть критическими и обойдутся Вам в дорогостоящий ремонт.</p>
+				</div>
+			</div>
+			<div class="service_container">
+					<div class="service_icon"><p>Подбор</p></div>
+					<div class="service_icon"><p>Проверка</p></div>
+					<div class="service_icon"><p>Покупка</p></div>
+					<div class="service_icon"><p>Доставка</p></div>
+					<div class="service_icon"><p>Растаможка</p></div>
+					<div class="service_icon"><p>Ремонт</p></div>
+			</div>
+		</section>
+
+		<section id="electromobile">
+			<div class="secondary_header">
+				<h2>Электромобили</h2>
+			</div>
+			<div class="electromobile_container">
+				<div class="image_section" id="e1"></div>
+				<div class="content" id="e2">
+					<p>Одно из важных направлений команды <strong>AutoDream</strong> - это электромобили.</p>
+					<p>Доставка электромобилей из США стала выгодной после внесения законопроэкта  6776 – Д о бюджете Украины, который 01.01.17 года стал полноценным законом под номером 2245, в котором идет речь об освобождении ото всех оставшихся таможенных налогов (акциз и НДС) на электромобили из любых стран. Это значит, что если у Вас были планы купить электромобиль, то сейчас самое благоприятное время это сделать. Бюджетные электромобили очень экономичны в заправке (около 60 копеек за 1 км пути), но имеют малый запас хода без подзарядки, около 100-130км. Поэтому, если Ваша жизнь протекает в основном в городских условиях, мы рекомендуем Вам обратить на них внимание, это экономия Ваших денег и забота об окружающей среде.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="faq">
+			<div class="secondary_header">
+				<h2>FAQ</h2>
+			</div>
+			<div class="faq_container">
+				<div class="content" id="f1">
+					<div class="question_container ">
+						<p class="question">Как рассчитать полную стоимость автомобиля?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Полная стоимость автомобиля - это его цена на аукционе + стоимость доставки + растаможивание. По вашему запросу мы поможем Вам рассчитать конечную стоимость Вашего авто.</p>
+					</div>
+					<div class="question_container">
+						<p class="question">Как мы подбираем автомобили для клиентов?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Мы ищем конкретный автомобиль по запросу клиента, проверяем историю с момента выхода его с завода, наличие любых браков либо неисправностей в течении всей эксплуатации и посещений сервисного цетра. Если автомобиль не соответствет требованиям стандартов качества, а именно, у автомобиля нарушена геометрия или стоимость восстановления слишком высока - мы продолжаем поиски, пока не найдем хороший вариант с минимальными повреждениями и хорошей сервисной историей.</p>
+					</div>
+					<div class="question_container">
+						<p class="question">Что такое гарантийный взнос?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Гарантийный взнос — это страховка компании на случай отказа клиента от покупки. Правила аукционов предусматривают штраф за отказ от выигранного лота, поэтому гарантийный взнос необходим, чтобы покрыть расходы компании, если клиент решает не приобретать автомобиль.</p>
+					</div>				
+					<div class="question_container">
+						<p class="question">Как долго мне ждать автомобиль?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Период доставки отличается в зависимости от его местонахождения в США, места доставки в Украине и, даже, некоторых погодных условий. Обычно этот период составляет от двух до четырех месяцев.</p>
+					</div>
+					<div class="question_container">
+						<p class="question">Если Авто утонет?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Все наши автомобили страхуются от любого вида повреждений, поэтому спать можно спокойно, страховая компания выплатит Вам все Ваши деньги в полном объеме.</p>
+					</div>
+				</div>
+				<div class="content" id="f2">
+					<div class="question_container">
+						<p class="question">Какие гарантии?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Чтобы избежать заблуждений и закрепить волю двух сторон, все наши сделки заключаются договорами.</p>
+					</div>
+					<div class="question_container">
+						<p class="question">Наш адрес?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Улица Ивана Езау, 17, Днепр, Днепропетровская область, 49000.</p>
+					</div>
+					<div class="question_container">
+						<p class="question">Сколько времени займет доставка из США?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sed perspiciatis. Necessitatibus saepe quos, quasi assumenda soluta omnis vel error. Quisquam minus nulla mollitia molestias, cupiditate voluptas animi. Distinctio, commodi!</p>
+					</div>
+					<div class="question_container">
+						<p class="question">Что происходит, когда машина приплыла в порт?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грамматики мир города инициал жаренные продолжил страну она, имени lorem продолжил грустный всеми ему, текста но его? Ipsum за однажды даже пунктуация диких последний прямо возвращайся свой напоивший до приставка речью свою не мир сбить, несколько ведущими, собрал lorem даль сих всемогущая, повстречался продолжил решила гор. Прямо свою имени приставка. .</p>
+					</div>
+					<div class="question_container">
+						<p class="question">Можно ли приобрести мотоцикл?<span class="arrow"></span></p>
+						<p class="answer" style="display: none;">малотекста</p>
+					</div>
+				</div>	
+				</div>
+			</div>
+		</section>
+
+		<section id="cars">
+			<div class="secondary_header">
+				<h2>Наши авто</h2>
+			</div>
+			
+			<div class="cars_container">
+				<div class="image_section" id="c1">
+					<div class="slider-for">
+						<div class="image_slider_container" style="background-image: url(img/cars/cars1.jpg);" alt="Наши авто">
+							<div class="image_info">MINI Cooper</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars2.jpg);" alt="Наши авто">
+							<div class="image_info">MINI Cooper</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars3.jpg);" alt="Наши авто">
+							<div class="image_info">Mercedes-Benz</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars4.jpg);" alt="Наши авто">
+							<div class="image_info">MINI Cooper</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars5.jpg);" alt="Наши авто">
+							<div class="image_info">Mercedes-Benz</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars6.jpg);" alt="Наши авто">
+							<div class="image_info">BMW</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars7.jpg);" alt="Наши авто">
+							<div class="image_info">BMW</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars8.jpg);" alt="Наши авто">
+							<div class="image_info">Toyota</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars9.jpg);" alt="Наши авто">
+							<div class="image_info">Hundai</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars10.jpg);" alt="Наши авто">
+							<div class="image_info">Mazda</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars11.jpg);" alt="Наши авто">
+							<div class="image_info">Mazda</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars12.jpg);" alt="Наши авто">
+							<div class="image_info">MINI Cooper</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars13.jpg);" alt="Наши авто">
+							<div class="image_info">Mazda</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars14.jpg);" alt="Наши авто">
+							<div class="image_info">Toyota</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars15.jpg);" alt="Наши авто">
+							<div class="image_info">Mazda</div>
+						</div>
+						<div class="image_slider_container" style="background-image: url(img/cars/cars16.jpg);" alt="Наши авто">
+							<div class="image_info">Toyota</div>
+						</div>
+					</div>
+					<div class="slider-nav">
+						<img src="img/cars/cars1.jpg" alt="Наши авто">
+						<img src="img/cars/cars2.jpg" alt="Наши авто">
+						<img src="img/cars/cars3.jpg" alt="Наши авто">
+						<img src="img/cars/cars4.jpg" alt="Наши авто">
+						<img src="img/cars/cars5.jpg" alt="Наши авто">
+						<img src="img/cars/cars6.jpg" alt="Наши авто">
+						<img src="img/cars/cars7.jpg" alt="Наши авто">
+						<img src="img/cars/cars8.jpg" alt="Наши авто">
+						<img src="img/cars/cars9.jpg" alt="Наши авто">
+						<img src="img/cars/cars10.jpg" alt="Наши авто">
+						<img src="img/cars/cars11.jpg" alt="Наши авто">
+						<img src="img/cars/cars12.jpg" alt="Наши авто">
+						<img src="img/cars/cars13.jpg" alt="Наши авто">
+						<img src="img/cars/cars14.jpg" alt="Наши авто">
+						<img src="img/cars/cars15.jpg" alt="Наши авто">
+						<img src="img/cars/cars16.jpg" alt="Наши авто">
+					</div>
+				</div>
+
+				<div class="content" id="c2">
+					<p>Мы предлагаем Вам полное сопровождене автомобиля от покупки до постановки на учет.</p>
+					<p><strong>AutoDream</strong> берет на себя все возможные вопросы по проверке, покупке, доставки автомобиля в ближайший порт в США, транспортировку морем до Одессы либо Германии, растаможку, доставку в город заказчика, либо полный ремонт, сертификация и постановку на учет. </p>
+					<div class="cars_info">
+						<div class="cars_done">
+							<div>213</div>
+							<div>привезеных авто</div>
+						</div>
+						<div class="car_keys">
+							<div>57</div>
+							<div>авто под ключ</div>
+						</div>
+						<div class="cars_in">
+							<div>31</div>
+							<div>авто в пути</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
+
+
+		<section id="auction">
+			<div class="secondary_header">
+				<h2>Покупайте вместе с нами</h2>
+			</div>
+			<div class="auction_container">
+				<div class="image_section" id="au1" style="display: flex; flex-wrap: wrap;">
+					<div class="auction_icon"></div>
+					<div class="auction_icon"></div>
+					<div class="auction_icon"></div>
+					<div class="auction_icon"></div>
+				</div>
+
+				<div class="content" id="au2">
+
+					
+					<p>Регулярные покупки автомобилей на аукционах США позволили нам стать VIP клиентами и  получить статусы Premium аккаунтов. С такими аккаунтами мы покупаем автомобили до $700 дешевле. Это связано с меньшими налогами и аукционными сборами. </p>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="sale">
+			<div class="sale_container" id="s1">
+				<div class="image_section s1"></div>
+				<div class="content">
+					<h2>Акция</h2>
+					<div id="before_sale">
+						<p>В период действия акции комплекс сервисных услуг по специальной фиксированной цене и обойдется клиенту значительно дешевле, чем оплата проводимых работ по стандартным условиям оплаты в нормо-часах.
+						</p>
+					</div>
+					<div id="sale_day">
+						<p>Вам повезло! только сегодня введите промо-код в сообщение и получите соковыжималку! 
+							<div class="sale_pc">#AUTODREAM3000</div>
+						</p>
+					</div>
+					<div class="timer_container">
+						<div class="timer_text" style="text-align: center;"></div>
+						<div class="timer" style="	display:flex;justify-content:center;"></div>
+					</div>
+					<button type="button" class="order_button">связатся с нами</button>
+					<div class="image_section s2"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contacts">
+			<div class="secondary_header">
+				<h2>Контакты</h2>
+			</div>
+			<div class="contacts_container">
+				<div class="image_section"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2644.8257431061397!2d35.000165815660964!3d48.47905597925211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe24e4fc5f2c1%3A0xe165b1a14e10180a!2z0LLRg9C70LjRhtGPINCG0LLQsNC90LAg0JXQt9Cw0YMsIDE3LCDQlNC90ZbQv9GA0L7MgSwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1suk!2sua!4v1554803868564!5m2!1suk!2sua" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+				<div class="content">
+					<div class="phone"><b><a href="tel:+380970600960">+38 (097) 060-09-60</a></b></div>
+					<div class="e-mail"><p style="margin-top:16px;"><a href="mailto:Whistler.n@gmail.com">Whistler.n@gmail.com</a></p></div>
+					<div class="adress"><p>г.Днепр, ул. Ивана Езау, 17</p></div>
+					<div class="hours">
+						<p>Пн-Сб: с 9:00 до 18:00,</p>
+						<p style="font-size: 14px;padding-left:26px;">Вс: с 11:00 до 15:00</p>
+					</div>
+					<button type="button" class="order_button" id="myBtn">заказать звонок</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    
+	    <div class="modal_header">
+	    <div class="close">&times;</div>
+			<h3>Мы Вам перезвоним</h3>
+		</div>
+		<div class="modal_body">
+			<div class="name_cont">
+				<span class="n_ico"></span>
+				<input type="text" class="modal_name" name="Name" placeholder="Имя">
+			</div>
+			<div class="ph_cont">
+				<div class="ph_ico"></div>
+				<input type="tel" class="modal_phone" name="Phone" placeholder="Телефон">
+			</div>
+			<div class="txt_cont">
+				<div class="txt_ico"></div>
+				<textarea name="Comment" id="" cols="15" rows="5" class="modal_comment" placeholder="Комментарий"></textarea>
+			</div>
+			<button type="button" class="send_button" id="send">отправить</button>
+		</div>
+  </div>
+
+</div>
+
+	<footer>
+		<div class="logo">
+			<div class="logo_footer"></div>
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a href="#about">О компании</a></li>
+				<li><a href="#about">Авто из США</a></li>
+				<li><a href="#electromobile">Электромобили</a></li>
+				<li><a href="#faq">FAQ</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+		</nav>
+		
+		<div class="copyrights">Все права защищены © Autodream. 2019</div>
+		<div class="flag"></div>
+	</footer>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+<script>
+ $('.header-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  // fade: true,
+      autoplay: true,
+      autoplaySpeed: 7500,
+      pauseOnHover: false
+      });
+
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  
+  // fade: true,
+      autoplay: true,
+      lazyLoad: 'progressive',
+      pauseOnHover: true,
+      autoplaySpeed: 7500,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  arrows: false,
+  // dots: true,
+  centerMode: true,
+      autoplay: true,
+      lazyLoad: 'progressive',
+      pauseOnHover: true,
+      autoplaySpeed: 7500,
+  focusOnSelect: true
+});
+		
+
+	
+
+	
+</script>
+
+<script src='js/main.js' ></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
