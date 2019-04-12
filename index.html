@@ -169,8 +169,14 @@
 						<p class="question">Можно ли приобрести мотоцикл?<span class="arrow"></span></p>
 						<p class="answer" style="display: none;">малотекста</p>
 					</div>
-				</div>	
 				</div>
+				</div>
+				<div class="addition_questions">
+					<div>
+						<div>Остались вопросы?</div>
+						<button type="button" class="order_button" style="margin: 0  0 30px 0;">напишите нам</button>
+					</div>
+				</div>	
 			</div>
 		</section>
 
@@ -288,7 +294,6 @@
 				</div>
 
 				<div class="content" id="au2">
-
 					
 					<p>Регулярные покупки автомобилей на аукционах США позволили нам стать VIP клиентами и  получить статусы Premium аккаунтов. С такими аккаунтами мы покупаем автомобили до $700 дешевле. Это связано с меньшими налогами и аукционными сборами. </p>
 
@@ -350,19 +355,21 @@
 			<h3>Мы Вам перезвоним</h3>
 		</div>
 		<div class="modal_body">
-			<div class="name_cont">
-				<span class="n_ico"></span>
-				<input type="text" class="modal_name" name="Name" placeholder="Имя">
-			</div>
-			<div class="ph_cont">
-				<div class="ph_ico"></div>
-				<input type="tel" class="modal_phone" name="Phone" placeholder="Телефон">
-			</div>
-			<div class="txt_cont">
-				<div class="txt_ico"></div>
-				<textarea name="Comment" id="" cols="15" rows="5" class="modal_comment" placeholder="Комментарий"></textarea>
-			</div>
-			<button type="button" class="send_button" id="send">отправить</button>
+			<form action="callback.php" method="post">
+				<div class="name_cont">
+					<span class="n_ico"></span>
+					<input type="text" class="modal_name" name="name" placeholder="Имя" required>
+				</div>
+				<div class="ph_cont">
+					<div class="ph_ico"></div>
+					<input type="tel" class="modal_phone" name="phone" placeholder="Телефон" required>
+				</div>
+				<div class="txt_cont">
+					<div class="txt_ico"></div>
+					<textarea name="message" cols="15" rows="5" class="modal_comment" placeholder="Комментарий"></textarea>
+				</div>
+				<button type="submit" name="submit" class="send_button" id="send">отправить</button>
+			</form>
 		</div>
   </div>
 
