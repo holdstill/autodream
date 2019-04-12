@@ -1038,7 +1038,7 @@ footer .copyrights {
 	.service_icon {
 		width: 90px;
 		padding-top: 90px;
-		margin: 0;
+		margin: 5px 15px;
 		text-align: center;
 	}
 	.service_container>.content {
@@ -1075,6 +1075,11 @@ footer .copyrights {
 	margin-right: 0;
 	margin-left: 0;
 }
+.image_slider_container {
+	max-width: inherit;
+    max-height: 500px;
+
+}
 
 }
 
@@ -1091,7 +1096,7 @@ footer .copyrights {
 	.service_icon {
 		width: 90px;
 		padding-top: 90px;
-		margin: 0;
+		margin: 5px 15px;
 		text-align: center;
 	}
 	.service_container>.content {
